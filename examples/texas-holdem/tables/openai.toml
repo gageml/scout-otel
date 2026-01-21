@@ -1,0 +1,12 @@
+# Baseline - Single OpenAI agent vs single bot
+#
+# Minimal config for testing the core loop.
+
+[[players]]
+name = "Eddie"
+type = "openai"
+model = "gpt-4o-mini"
+
+[[players]]
+name = "Betty Bot"
+type = "bot"

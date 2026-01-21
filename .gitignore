@@ -1,0 +1,6 @@
+runs
+scans
+logs
+.env
+.venv
+*.pyc

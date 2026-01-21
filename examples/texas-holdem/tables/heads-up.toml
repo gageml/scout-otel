@@ -1,0 +1,18 @@
+# Heads-Up Battle
+#
+# Two LLM agents face off in a heads-up match.
+
+game_name = "Heads-Up Battle"
+buyin = 1000
+small_blind = 10
+big_blind = 20
+
+[[players]]
+name = "Alice"
+type = "openai"
+model = "gpt-4o-mini"
+
+[[players]]
+name = "Bob"
+type = "anthropic"
+model = "claude-sonnet-4-20250514"

@@ -1,0 +1,8 @@
+[[players]]
+name = "The Professor"
+type = "langchain"
+model = "gpt-4.1-mini"
+
+[[players]]
+name = "Barry Bot"
+type = "bot"

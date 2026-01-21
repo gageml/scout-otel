@@ -1,0 +1,12 @@
+# Pydantic AI is not yet showing full trace detail - full detail is
+# pending use of Pydantic AI OTEL tracing (scout-otel is currently using
+# only traceloop)
+
+[[players]]
+name = "The Professor"
+type = "pydantic"
+model = "claude-3-5-haiku-20241022"
+
+[[players]]
+name = "Barry Bot"
+type = "bot"

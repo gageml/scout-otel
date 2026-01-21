@@ -1,0 +1,8 @@
+[[players]]
+name = "Slim Chance"
+type = "anthropic"
+model = "claude-opus-4-5-20251101"
+
+[[players]]
+name = "Betty Bot"
+type = "bot"

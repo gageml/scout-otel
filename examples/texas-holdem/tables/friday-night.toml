@@ -1,0 +1,29 @@
+# Friday Night Poker - Multi-agent showdown
+#
+# A 4-player game featuring different LLM frameworks competing at poker.
+# Demonstrates context isolation with concurrent agents.
+
+game_name = "Friday Night Poker"
+buyin = 500
+small_blind = 5
+big_blind = 10
+
+[[players]]
+name = "Fast Eddie"
+type = "openai"
+model = "gpt-4o-mini"
+
+[[players]]
+name = "Slim Chance"
+type = "anthropic"
+model = "claude-opus-4-5-20251101"
+
+[[players]]
+name = "The Professor"
+type = "pydantic"
+model = "claude-3-5-haiku-20241022"
+
+[[players]]
+name = "Jack Hart"
+type = "langchain"
+model = "gpt-4.1-mini"

@@ -1,0 +1,36 @@
+[project]
+name = "texas-holdem"
+version = "0.1.0"
+description = "No-Limit Texas Hold'em poker demo with LLM agents"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic",
+    "dacite",
+    "langchain",
+    "langchain-openai",
+    "openai-agents",
+    "pydantic-ai",
+    "python-dotenv",
+    "scout-otel",
+    "texasholdem",
+    "traceloop-sdk",
+    "click",
+]
+
+[tool.uv.sources]
+scout-otel = { workspace = true }
+
+[project.scripts]
+texas-holdem = "texas_holdem.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.408",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/texas_holdem"]

@@ -1,0 +1,27 @@
+[project]
+name = "scout-otel"
+version = "0.1.0"
+description = "Bridge OpenLLMetry instrumentation to Scout transcript Parquet files"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["click", "inspect-scout", "rich", "traceloop-sdk"]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+scout-otel = "scout_otel.cli.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["examples/texas-holdem", "examples/simple-case"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
