@@ -26,7 +26,8 @@ async def main():
     agent = Agent(
         name="TimeAgent",
         instructions=(
-            "You are a helpful assistant. When asked about the time, use the get_time tool."
+            "You are a helpful assistant. When asked about the time, "
+            "use the get_time tool."
         ),
         model="gpt-4o-mini",
         tools=[get_time],
