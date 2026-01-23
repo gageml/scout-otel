@@ -2,15 +2,6 @@
 
 ## Design topics / discussion
 
-Easier:
-
-- [ ] Project title and description
-- [ ] Project / source code home
-- [ ] Span start/end transcript events (lossless span info)
-- [ ] Deeper Scout integration (vision)
-
-Harder:
-
 - [ ] "Correctness" strategy
   - Spans -> transcript events -> Spans (prove lossless)
   - Traceloop tests -> span breadth (speculative)
@@ -28,7 +19,13 @@ Harder:
       topic)
 - [ ] Performance topics (memory, performance)
 
-## Examples
+## Speculative
+
+- [ ] Span start/end transcript events (lossless span info) (Update: not
+      a clear need for lossless repro of original spans but it's
+      feasible given the spant event structures)
+
+## Enhancements to Examples
 
 - [Texas holdem](./examples/texas-holdem/TODO.md)
 - [Simple case](./examples/simple-case/TODO.md)
